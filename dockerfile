@@ -8,7 +8,7 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-# Serve 
+
 FROM node:18-alpine
 RUN npm install -g serve
 WORKDIR /app
